@@ -1,0 +1,29 @@
+Description: Use system libmarkdown
+Origin: vendor
+Bug-Debian: https://bugs.debian.org/649489
+Forwarded: not-needed
+Author: Alessandro Ghedini <ghedo@debian.org>
+Last-Update: 2014-04-12
+
+--- a/Rakefile
++++ b/Rakefile
+@@ -17,7 +17,7 @@
+ end
+ CLEAN.include "ext/ruby-*"
+ 
+-file 'ext/Makefile' => FileList['ext/*.{c,h,rb}', "ext/ruby-#{RUBYDIGEST}"] do
++file 'ext/Makefile' => FileList['ext/*.rb', 'ext/rdiscount.c', "ext/ruby-#{RUBYDIGEST}"] do
+   chdir('ext') { ruby 'extconf.rb' }
+ end
+ CLEAN.include 'ext/Makefile', 'ext/mkmf.log'
+--- a/ext/extconf.rb
++++ b/ext/extconf.rb
+@@ -2,6 +2,8 @@
+ 
+ dir_config('rdiscount')
+ 
++have_library('markdown')
++
+ HAVE_RANDOM = have_func('random')
+ HAVE_SRANDOM = have_func('srandom')
+ HAVE_RAND = have_func('rand')

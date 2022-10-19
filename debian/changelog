@@ -1,0 +1,64 @@
+ruby-rdiscount (2.1.8-1) unstable; urgency=medium
+
+  * Team upload.
+  * Bumped up compat version to 9.
+  * Upload to unstable.
+  * Multi-arch used by default now (Closes: #723535)
+
+ -- Sebastien Badia <seb@sebian.fr>  Wed, 19 Aug 2015 17:58:04 +0200
+
+ruby-rdiscount (2.1.8-1~exp1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream release (2.1.8).
+  * Target experimental and build with ruby 2.2.
+  * Add ruby-test-unit to Build-Depends for ruby2.2.
+  * Update Vcs-Browser to cgit URL and HTTPS.
+  * Bump Standards-Version to 3.9.6 (no further changes).
+
+ -- Sebastien Badia <seb@sebian.fr>  Sun, 19 Apr 2015 20:13:01 +0200
+
+ruby-rdiscount (2.1.7.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Actually use system libmarkdown
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Tue, 08 Jul 2014 19:34:50 +0200
+
+ruby-rdiscount (2.1.7.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Mon, 14 Apr 2014 12:49:44 +0200
+
+ruby-rdiscount (2.1.7-1.1) unstable; urgency=medium
+
+  * NMU
+  * New upstream release (Closes: #728744)
+  * Bump Standards-Version to 3.9.5 (no changes needed)
+  * Update upstream license
+  * Use system libmarkdown (Closes: #649489)
+
+ -- Alessandro Ghedini <ghedo@debian.org>  Sat, 12 Apr 2014 18:40:25 +0200
+
+ruby-rdiscount (1.6.8-3) unstable; urgency=low
+
+  * Team upload.
+  * Bump build dependency on gem2deb to >= 0.3.0~.
+  * Bump Standard-Version: to 3.9.3 (no changes needed)
+  * Update debian/copyright to DEP-5 copyright-format/1.0
+
+ -- Cédric Boutillier <cedric.boutillier@gmail.com>  Sat, 30 Jun 2012 00:02:04 +0200
+
+ruby-rdiscount (1.6.8-2) unstable; urgency=low
+
+  * Do not install markdown.7 (Closes: #646932)
+
+ -- Martin Ueding <dev@martin-ueding.de>  Wed, 09 Nov 2011 08:54:14 -0200
+
+ruby-rdiscount (1.6.8-1) unstable; urgency=low
+
+  * Initial release (Closes: #643673)
+
+ -- Martin Ueding <dev@martin-ueding.de>  Wed, 28 Sep 2011 16:19:55 +0200

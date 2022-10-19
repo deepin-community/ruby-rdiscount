@@ -1,0 +1,26 @@
+Source: ruby-rdiscount
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Martin Ueding <dev@martin-ueding.de>
+Build-Depends: debhelper (>= 9~),
+               gem2deb (>= 0.3.0~),
+               libmarkdown2-dev,
+               ruby-test-unit
+Standards-Version: 3.9.6
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-rdiscount.git
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-rdiscount.git
+Homepage: http://github.com/rtomayko/rdiscount
+XS-Ruby-Versions: all
+
+Package: ruby-rdiscount
+Architecture: any
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter, ${misc:Depends}, ${shlibs:Depends}
+Description: Discount Markdown Processor for Ruby
+ Discount is an implementation of John Gruber's Markdown markup language in C.
+ It implements all of the language described in the markdown syntax document
+ and passes the Markdown 1.0 test suite.
+ .
+ RDiscount is a Ruby extension library for Discount. It can be used as a
+ stand-alone program or within another Ruby program.
